@@ -59,10 +59,47 @@ namespace ProvaTecnologia
             Console.WriteLine(words[0] +" / " + words[1]);
             Console.WriteLine(isPermutation(words[0], words[1]));
 
-
-
             //Os métodos utilizados foram criados abaixo com "// Atividade x" acima de cada um deles
             //Indicando para qual solução foram feitos.
+
+
+
+
+
+            /* Questões de banco de dados
+            Atividade 1:
+                Considere um banco de dados com a seguinte estrutura:
+                Cursos: CursoID*, NomeDoCurso, ProfessorID
+                Teachers: ProfessorID*, NomeDoProfessor
+                Students: EstudanteID*, NomeDoEstudante
+                StudentCourses: CursoID*, EstudanteID*
+
+                1. Implemente uma query que retorne uma lista com todos os
+                estudantes e quais os cursos que cada estudante está
+                matriculado;
+
+                Resposta:
+            ===========================================================================
+                    SELECT NomeDoEstudante, NomeDoCurso FROM StudentCourses AS SC
+                    INNER JOIN Students AS ST on ST.EstudanteID = SC.StudentsID
+                    INNER JOIN Cursos AS CR on CR.CursoID  = SC.CursoID
+                    ORDER BY ST.NomeDoEstudante 
+            ===========================================================================
+
+                 2. Implemente uma query que retorne uma lista de todos os
+                 professores e quantos estudantes cada um ensina. Se um
+                 professor ensina o mesmo aluno em classes diferentes, você
+                 deve dobrar a contagem de estudantes. Ordene a lista numa
+                 ordem decrescente pelo número de estudantes que cada um
+                 ensina;
+
+                 Resposta:
+            ===========================================================================
+
+            ===========================================================================
+
+
+             */
         }
 
 
