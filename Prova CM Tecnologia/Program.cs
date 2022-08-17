@@ -19,10 +19,10 @@ namespace ProvaTecnologia
 
            - Obs pessoais:
                 a) Assumi que não haveria distinção de letras maiúsculas nem minúsculas 
-                por isso o ToLower() logo após o ReadLine() onde o usuário digita seu texto
+                por isso a escolha do uso do método ToLower()
 
                 b) Também assumi que não haveria necessidade de tratar os espaços " " 
-                e fazer alguma limitação para que o usuário digite apenas 1 palavra.
+                e que iríamos usar apenas 1 palavra por vez
 
              */
 
@@ -41,15 +41,28 @@ namespace ProvaTecnologia
                 input: ("god", "dog") output: true
                 input: ("god", "dog ") output: false
 
+            - Obs pessoais:
+                a) Utilizei de alguns WriteLines para melhor visualização do resultado do código.
+                
+                b) Usar o array words[] para inserir as duas palavras
+
+                c) Aqui também assumi que não faríamos distinção de maiúsculo para minúsculo
+
              */
 
-            string[] palavras = new string[2];
-            palavras[0] = "Dog".ToLower();
-            palavras[1] = "God".ToLower();
+            //Atividade 2:
+            string[] words = new string[2];
+            words[0] = "Dog".ToLower();
+            words[1] = "God".ToLower();
             Console.WriteLine("==================");
             Console.WriteLine("Atividade 2: ");
-            Console.WriteLine(palavras[0] +" / " + palavras[1]);
-            Console.WriteLine(isPermutation(palavras[0], palavras[1]));
+            Console.WriteLine(words[0] +" / " + words[1]);
+            Console.WriteLine(isPermutation(words[0], words[1]));
+
+
+
+            //Os métodos utilizados foram criados abaixo com "// Atividade x" acima de cada um deles
+            //Indicando para qual solução foram feitos.
         }
 
 
